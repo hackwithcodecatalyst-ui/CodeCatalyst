@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CodeCatalyst — Hackathon team showcasing projects, achievements, and our crew." />
+    <title>CodeCatalyst — Build. Ship. Win.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particles"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="CodeCatalyst home">
+        <img src="assets/logo.svg" alt="CodeCatalyst logo" />
+        <span>CodeCatalyst</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="icon-moon">☾</span>
+        <span class="icon-sun">☼</span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero section" aria-label="Hero">
+        <div class="hero-inner">
+          <div class="glitch" aria-hidden="true" data-text="CodeCatalyst">CodeCatalyst</div>
+          <h1 class="sr-only">CodeCatalyst</h1>
+          <p class="subtitle">We prototype fast, ship faster, and win hackathons.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Collaborate with us</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">AI/ML</span>
+            <span class="badge">Web</span>
+            <span class="badge">Cloud</span>
+            <span class="badge">Open Source</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="lead">CodeCatalyst is a hackathon squad obsessed with elegant UX, resilient infra, and audacious ideas. We turn napkin sketches into production-grade demos under pressure.</p>
+          <div class="features-grid">
+            <div class="card glass reveal">
+              <h3>Rapid Prototyping</h3>
+              <p>Design sprints, ruthless prioritization, and a shipping mindset from day one.</p>
+            </div>
+            <div class="card glass reveal">
+              <h3>Deep Tech</h3>
+              <p>From LLM tooling to edge compute and real-time systems, we love hard problems.</p>
+            </div>
+            <div class="card glass reveal">
+              <h3>Team Ops</h3>
+              <p>Clear roles, strong code reviews, and automated CI keep us moving fast.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="project card glass reveal">
+              <div class="project-tag">Featured</div>
+              <h3>Project Nova</h3>
+              <p>Agentic AI that orchestrates APIs to solve end-to-end tasks with guardrails and human-in-the-loop review.</p>
+              <div class="meta">
+                <span>TypeScript • Python • Postgres</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn-ghost" aria-label="Live demo">Live</a>
+                <a href="#" class="btn btn-ghost" aria-label="Source code">Code</a>
+              </div>
+            </article>
+            <article class="project card glass reveal">
+              <h3>Pulse</h3>
+              <p>Realtime health dashboard for distributed systems. SLO-aware alerts and anomaly detection.</p>
+              <div class="meta">
+                <span>Go • WebSockets • Grafana</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn-ghost">Case study</a>
+              </div>
+            </article>
+            <article class="project card glass reveal">
+              <h3>GlassUI</h3>
+              <p>Neon + glassmorphism component kit for dark UIs. Accessible, fast, and pretty.</p>
+              <div class="meta">
+                <span>CSS • Web Components</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn-ghost">Docs</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <div class="container">
+          <h2 class="section-title">Achievements</h2>
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="dot"></div>
+              <div class="content">
+                <time>2025</time>
+                <h3>First Place — DevSprint</h3>
+                <p>Built and shipped a production-ready AI workflow in 36 hours.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="dot"></div>
+              <div class="content">
+                <time>2024</time>
+                <h3>Best UX — CloudHack</h3>
+                <p>Recognized for delightful, accessible design at speed.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <div class="dot"></div>
+              <div class="content">
+                <time>2023</time>
+                <h3>Finalists — OpenSourceFest</h3>
+                <p>Launched a community-driven toolkit used by 1k+ developers.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="team" class="section">
+        <div class="container">
+          <h2 class="section-title">Team</h2>
+          <div class="team-grid">
+            <div class="member card glass reveal">
+              <img class="avatar" src="https://api.dicebear.com/8.x/bottts-neutral/svg?seed=Ada" alt="Avatar of Ada" />
+              <h3>Ada</h3>
+              <p>AI Engineer • Model tooling and agents</p>
+              <div class="links">
+                <a href="#">@ada</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+            <div class="member card glass reveal">
+              <img class="avatar" src="https://api.dicebear.com/8.x/bottts-neutral/svg?seed=Linus" alt="Avatar of Linus" />
+              <h3>Linus</h3>
+              <p>Platform • Infra, DX, and reliability</p>
+              <div class="links">
+                <a href="#">@linus</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+            <div class="member card glass reveal">
+              <img class="avatar" src="https://api.dicebear.com/8.x/bottts-neutral/svg?seed=Grace" alt="Avatar of Grace" />
+              <h3>Grace</h3>
+              <p>Frontend • Design systems and accessibility</p>
+              <div class="links">
+                <a href="#">@grace</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form class="contact-form card glass" action="mailto:team@codecatalyst.dev" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Let's build something." rows="4" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send</button>
+              <a class="btn btn-ghost" href="mailto:team@codecatalyst.dev">Open email</a>
+            </div>
+            <p class="form-note">Prefer DMs? Ping us on Twitter or GitHub.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="brand small">
+          <img src="assets/logo.svg" alt="CodeCatalyst logo small" />
+          <span>CodeCatalyst</span>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="copy">© <span id="year"></span> CodeCatalyst. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Optional: Analytics or widgets can be added later -->
+  </body>
+  </html>
+
+

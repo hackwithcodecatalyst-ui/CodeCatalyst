@@ -1,5 +1,3 @@
-# CodeCatalyst
-website that will feature us, our projects and achievements. make it pretty, very techy 
 # CodeCatalyst — Static Site (Phase 1)
 
 A sleek, dark, neon-glass site to showcase CodeCatalyst, our projects, achievements, and team.
